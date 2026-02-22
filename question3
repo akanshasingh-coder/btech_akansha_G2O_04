@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int r;
+  float a,c;
+  printf("enter the radius of the circle: \n");
+  scanf("%d" , &r);
+  a = 3.14*r*r;
+  c = 2*3.14*r;
+  printf("the are of the circle is %f" ,a);
+  printf("the circumference of the circle is %f",c);
+  return 0;
+}
