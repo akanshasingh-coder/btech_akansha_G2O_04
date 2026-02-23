@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+   int a=0;
+   int b=1;
+   int s;
+   int n;
+   printf("enter number of terms");
+   scanf("%d",&n);
+   if(n==1)
+   printf("%d",&a);
+   else if (n==2)
+   printf("%d %d", &a,&b);
+   else if(n>2)
+   {
+    printf("|%d %d",&a,&b);
+    for(int i=1;i<=n-2;i++) 
+    {
+        s=a+b;
+        printf("%d",s);
+        a=b;
+        b=s;
+    }
+   }
+   else 
+   printf("enter more no. of terms");
+   return 0;
+}
